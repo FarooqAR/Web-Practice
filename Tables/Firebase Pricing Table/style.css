@@ -1,0 +1,52 @@
+ /* set default font */
+ 
+ body {
+     font-family: Roboto;
+ }
+ /* style table */
+ 
+ table {
+     border: 0.5px solid #8b9bb2;
+     /* remove cell borders */
+     border-collapse: collapse;
+ }
+ 
+ h1 {
+     font-weight: 100;
+ }
+ /* default weight for all table headings  */
+ 
+ th {
+     font-weight: 100;
+ }
+ /* default padding for all table cells */
+ 
+ td,
+ th {
+     padding: 15px;
+ }
+ /* style headings that have "colspan" attribute */
+ 
+ th[colspan] {
+     background: #f8f9fb;
+     color: #8b9bb2;
+     text-align: left;
+ }
+ /* style heading rows */
+ 
+ tr.heading {
+     background: #43576f;
+     color: white;
+     height: 50px;
+     font-size: 1.1em;
+ }
+ /* style prices row */
+ 
+ tr.prices {
+     font-size: 0.8em;
+ }
+ /* center align text for last 6 td elements */
+ 
+ tr td:nth-last-child(-n+6) {
+     text-align: center;
+ }
