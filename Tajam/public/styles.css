@@ -58,7 +58,6 @@ header{
 .header *{
     color: #000 !important;
 }
-.header 
 .header a:hover{
     color: #4C3B70 !important;
 }
@@ -70,6 +69,9 @@ header{
 .logo,nav{
     display: table-cell;
     vertical-align: middle;
+}
+.hide_nav{
+    display: none;
 }
 nav{
     text-align: right;
@@ -633,6 +635,7 @@ nav{
     background-image: url("images/phone.png");
 }
 #footer input{
+    color: #fff;
     font-size: 1em;
     padding: 10px;
     width: 70%;

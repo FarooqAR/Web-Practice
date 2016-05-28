@@ -1,0 +1,110 @@
+.content-wrapper{
+    width: 90%;
+}
+main{
+    -webkit-overflow-scrolling : touch;
+}
+.header{
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.header *{
+    color: #fff !important;
+}
+.header a:hover{
+    color: #00e0d0 !important;
+}
+
+nav{
+    display: none;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+    z-index: 99;
+    height:100vh; 
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+}
+.hide_nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    padding: 20px;
+    font-size: 3em;
+    color: #fff;
+}
+.show_nav{
+    display: inline-block;
+    padding: 15px;
+    margin-top: 10px;
+    margin-right: -10px;
+    background-image: url("images/hamburger.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.show_nav.white{
+    background-position-x: -30px;
+}
+.nav{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.nav li{
+    display: block;
+    font-size: 1.5em;
+}
+.nav a:link{
+    display: block;
+    padding: 12px 28px 12px 28px;
+}
+
+#about .left,
+#about .right{
+    float: none;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+}
+
+.nav-expertise li{
+    display: block;
+    width: inherit;
+}
+.works{
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.nav-clients{
+    width: 100%;
+}
+#contact form{
+    width: 100%;
+    padding: 0;
+}
+#contact input,
+#contact textarea{
+    padding: 10px 0 10px 5px;
+    margin: 5px 0 5px -2.5px;
+}
+#footer .grid_3{
+    width: 100%;
+    float: none;
+    padding: 0;
+}
+#footer h3{
+    text-align: center;
+}
+#footer .right{
+    text-align: center;
+}
+#footer .footer{
+    display: block;
+}
