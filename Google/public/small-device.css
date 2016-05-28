@@ -1,6 +1,9 @@
 .search{
     width: 80%;
 }
+.logo img{
+width:80%;
+}
 footer ul{
     display: block;
     text-align: center;
