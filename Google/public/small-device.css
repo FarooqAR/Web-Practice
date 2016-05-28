@@ -1,0 +1,14 @@
+.search{
+    width: 80%;
+}
+footer ul{
+    display: block;
+    text-align: center;
+}
+.left-nav{
+    margin-left: 0;
+}
+.right-nav{
+    float: none;
+    margin-right: 0;
+}
