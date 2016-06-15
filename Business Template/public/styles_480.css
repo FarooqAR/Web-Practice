@@ -39,8 +39,8 @@ header .container{
     padding-left: 15px;
 }
 /*feature*/
-.feature-heading .material-icons{
-    top: 4px;
+#feature{
+    background-position-x: 70%;
 }
 /*section quality*/
 .promo-container .promo-item{

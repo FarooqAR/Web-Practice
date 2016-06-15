@@ -51,6 +51,13 @@ h2{
 .clearfix{
     clear: both;
 }
+.fa{
+    position: relative;
+    right: 5px;
+}
+.fa-caret-down{
+    right: 0;
+}
 /*header navigation*/
 
 nav {
@@ -150,11 +157,6 @@ nav ul {
 .feature-heading{
     margin: 0;
     font-weight: 800;
-}
-.feature-heading .material-icons{
-    font-size: 1em;
-    position: relative;
-    top: 10px;
 }
 #feature p{
     font-size: 1.2em;
