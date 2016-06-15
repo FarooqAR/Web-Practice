@@ -1,0 +1,63 @@
+h1{
+    font-size: 2em;
+}
+
+header .container{
+    width: 100%; 
+}
+/*header navigation*/
+.logo,
+.menu-button {
+    padding: 5px;
+}
+.logo{
+    margin-left: 10px;
+}
+.menu-button{
+    display: inline-block;
+    margin-right: 10px;
+}
+/*navigation menu*/
+.nav-menu{
+    float: none;
+    overflow: hidden;
+}
+.nav-hidden{
+    display: none; 
+}
+.nav-menu > li{
+    display: block;
+}
+.nav-menu ul{
+    position: relative;
+    padding-left: 1em;
+    box-shadow: none;
+}
+.nav-menu a:link{
+    display: block; 
+    padding: 10px;
+    padding-left: 15px;
+}
+/*feature*/
+.feature-heading .material-icons{
+    top: 4px;
+}
+/*section quality*/
+.promo-container .promo-item{
+    width: 100%;
+}
+
+/*products*/
+.product{
+    width: 100%;
+}
+
+/*services*/
+#services img{
+    width: 100%;
+    margin: 2em auto;
+}
+/*footer*/
+.footer-info .col{
+    width: 100%;
+}
