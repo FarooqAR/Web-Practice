@@ -51,25 +51,23 @@ h2{
 .clearfix{
     clear: both;
 }
-.fa{
-    position: relative;
-    right: 5px;
-}
-.fa-caret-down{
-    right: 0;
-}
 /*header navigation*/
 
 nav {
-    position: relative;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    left: 0;
+    background: #fff;
     padding: 10px 0;
 }
 
-
-
-.logo {
+.logo,.menu-button{
     font-size: 1.3em;
     padding: 10px;
+}
+
+.logo {
     display: inline-block;
 }
 
@@ -123,14 +121,6 @@ nav ul {
 }
 .nav-menu .active {
     background-color: #e7e7e7;
-}
-.nav-menu .arrow-drop-down{
-    position: relative;
-    top: .25em;
-    right: .25em;
-}
-.nav-menu .icon-cart {
-    vertical-align: middle;
 }
 
 .nav-menu {
@@ -241,12 +231,12 @@ nav ul {
 .product .add-to-cart{
     position: relative;
 }
-.add-to-cart input,
-.add-to-cart .btn{
-    
+.product .fa{
+    position: relative;
+    right: 5px;
 }
 .add-to-cart input{
-    width: calc(40% - 16px);
+    width: 40%;
     box-sizing: border-box;
     padding: 6px;
     font-size: 1em;
@@ -256,20 +246,12 @@ nav ul {
     border: 1px solid #d7d7d7;
 }
 .add-to-cart .btn{
-    width: calc(60% - 18px);
+    width: calc(60% - 2.2em);
     position: relative;
     left: -5px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     text-align: center;
-}
-.add-to-cart .icon-cart{
-    position: relative;
-    vertical-align: middle;
-    font-size: 1.1em;
-    bottom: 1px;
-    margin-right: 3px;
-    
 }
 /*services*/
 #services{
@@ -317,7 +299,7 @@ nav ul {
     margin: 10px 0;
 }
 .footer-info input{
-    width: calc(60% - 16px);
+    width: calc(60% - 20px);
     box-sizing: border-box;
     padding: 6px;
     font-size: 1em;
@@ -327,7 +309,7 @@ nav ul {
     border: 1px solid #d7d7d7;
 }
 .footer-info .btn{
-    width: calc(40% - 18px);
+    width: calc(40% - 20px);
     position: relative;
     color: #fff;
     left: -5px;

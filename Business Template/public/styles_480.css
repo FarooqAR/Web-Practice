@@ -6,16 +6,15 @@ header .container{
     width: 100%; 
 }
 /*header navigation*/
-.logo,
-.menu-button {
-    padding: 5px;
-}
 .logo{
     margin-left: 10px;
 }
 .menu-button{
     display: inline-block;
     margin-right: 10px;
+}
+nav{
+    position: relative;
 }
 /*navigation menu*/
 .nav-menu{
@@ -50,6 +49,7 @@ header .container{
 /*products*/
 .product{
     width: 100%;
+    margin: 0;
 }
 
 /*services*/
