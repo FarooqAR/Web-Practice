@@ -9,12 +9,225 @@ body{
     background-attachment: fixed;
 }
 h1{
-    font-weight: inherit;
     text-align: center;
     color: #fff;
     text-shadow: 0px 0px 4px rgba(0,0,0,1);
 }
-.main > .left,
+#header{
+    text-align: center;
+}
+#header img{
+    width: 300px;
+    position: relative;
+    bottom: -36px;
+    margin-top: -36px;
+}
+h1,h2{
+    font-weight: inherit;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+input[type="text"],input[type="password"]{
+    padding: 5px;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid #999;
+    font-family: inherit;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+    border: 1px solid #6639B6;
+}
+.btn{
+    display: inline-block;
+    padding: 0.6em 1em;
+    color: #fff;
+    background-color: #6639B6;
+}
+.btn:hover{
+    background-color: #6233b5;
+}
+.btn:active{
+    background-color: #5c2ab6;
+}
+a:link,
+a:visited{
+    text-decoration: none;
+}
 .main > .right{
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
     background-color: #fff;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul ul{
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ;
+    -moz-transition: all 0.3s ;
+    transition: all 0.3s ;
+}
+ul a:link,
+ul a:visited{
+    color: blue;
+}
+ul a:hover,
+ul a:focus{
+    background-color: #6639B6;
+    color: #fff;
+}
+
+ul li:hover > ul{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.inner-menu li > a{
+    padding: 5px 15px;
+}
+.menu .fa-angle-right{
+    float: right;
+}
+ul a{
+    display: block;
+    padding: 5px 10px;
+}
+.left.nav-container .group{
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    background-color: #fff;
+}
+.video-category{
+    text-align: center;
+}
+.left.nav-container label{
+    display: block;
+} 
+
+.left.nav-container input[type="text"]{
+    display: block;
+    width: 98%;
+}
+.left.nav-container .radio-group{
+    margin: 1em 0;
+}
+
+.left.nav-container h2{
+    text-align: center;
+}
+.social{
+    text-align: center;
+}
+.social a:link{
+    font-size: 2em;
+} 
+.fb-btn:hover{
+    color: #3B5999;
+}
+.google-btn:hover{
+    color: #E33E2B;
+}
+.twitter-btn:hover{
+    color: #5EA9DD;
+}
+.rss-btn:hover{
+    color: #F8991D;
+}
+.more-btn:hover{
+    color: #FF6550;
+}
+
+/*main content*/
+.main-content{
+    padding: 0 1em;
+}
+.right p{
+    overflow: auto;
+}
+.right h2{
+    text-align: center;
+    color: #fff;
+    padding: 3px 0;
+    background-color:#6639B6; 
+}
+.main-content .publish-info{
+    color: #999;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+.main-content img{
+    width: 50%;
+    float: right;
+}
+
+@media only screen and (min-width:768px){
+    .main > .left,
+    .main > .right{
+        float: left;
+    }
+    .main > .left{
+        width: 25%;
+        margin: 0;
+    }
+    .main > .left .group{
+        padding: 0;
+        margin : 2px 0;
+        border: 1em solid #fff;
+    }
+    .main > .right{
+        width: 75%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border-left: 1em solid transparent;
+        box-sizing: border-box;
+    }
+    .main-content,.right-sidebar{
+        
+        padding: 0;
+        float: left;
+        box-sizing: border-box;
+    }
+    .main-content{
+        background-color: #fff;
+        width: 75%;
+        border: 1em solid transparent;
+    }
+    .main-content img{
+        width: 25%;
+    }
+    .right-sidebar{
+        width: 25%;
+        padding-left: 4px;
+    }
+    .right-sidebar .group{
+        background-color: #fff;;
+    }
+    .right-sidebar .group:first-child{
+        padding-top: 1em;
+    }
+    .right-sidebar p{
+        padding: 0.5em;
+    }
+    .right-sidebar input[type="text"],
+    .right-sidebar input[type="password"]{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .right-sidebar label{
+        display: block;
+    }
+
+    .login-group{
+        padding: 1em;
+    }
 }

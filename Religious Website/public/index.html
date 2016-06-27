@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Religion of Islam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <div id="header">
         <h1>Religion of Islam</h1>
+        <img src="./images/quran.png" alt="Quran">
     </div>
     <div id="main" class="main">
         <div class="left nav-container">
             <div class="group article-category">
                 <h2>Article Categories</h2>
-                <ul>
-                    <li><a href="#">Evidence Islam is Truth<span class="fa fa-angle-right"></span></a></li>
+                <ul class="menu">
+                    <li><a href="#">Evidence Islam is Truth<span class="fa fa-angle-right"></span></a>
+                        <ul class="inner-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                            <li><a href="#">Item 5</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">The Benefits of Islam<span class="fa fa-angle-right"></span></a></li>
                     <li><a href="#">Beliefs of Islam<span class="fa fa-angle-right"></span></a></li>
-                    <li><a href="#">How to Convert to Islam<span class="fa fa-angle-right"></span></a></li>
+                    <li><a href="#">How to Convert to Islam<span class="fa fa-angle-right"></span></a>
+                        <ul class="inner-menu">
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Worship and Practice<span class="fa fa-angle-right"></span></a></li>
                     <li><a href="#">The Hereafter<span class="fa fa-angle-right"></span></a></li>
                     <li><a href="#">Stories of New Muslims<span class="fa fa-angle-right"></span></a></li>
@@ -29,61 +47,211 @@
                     <li><a href="#">Systems in Islam<span class="fa fa-angle-right"></span></a></li>
                 </ul>
             </div>
-            <a href="#" class="btn video-category">Video Categories</a>
+            <div class="group video-category">
+                <a href="#" class="btn">Video Categories</a>
+            </div>
+
             <div class="group search">
                 <h2>Search</h2>
-                <input type="text">
-                <div class="radio-group">
+                <input type="text" placeholder="Search ...">
+                <form class="radio-group">
                     <label for="allwords">
-                        <input type="radio" id="allwords">
+                        <input type="radio" name="searchFilter" id="allwords">
                         All words
                     </label>
                     <label for="anyword">
-                        <input type="radio" id="anyword">
+                        <input type="radio" name="searchFilter" id="anyword">
                         Any word    
                     </label>
                     <label for="exact">
-                        <input type="radio" id="exact">
+                        <input type="radio" name="searchFilter" id="exact">
                         Exact phrase
                     </label>
                     <label for="sounds">
-                        <input type="radio" id="sounds">
+                        <input type="checkbox" id="sounds">
                         Sounds like
                     </label>
                     <label for="include-der">
                         <input type="checkbox" id="include-der">
                         Include Derivatives
                     </label>
-                    <button>Search</button>
-                </div>
+                    <button type="submit" class="btn">Search</button>
+                </form>
             </div>
             <div class="group books">
                 <ul>
-                    <li><a href="#"><span class="fa fa-book"></span>Intro E-Books</a></li>
-                    <li><a href="#"><span class="fa fa-book"></span>Guest Book</a></li>
-                    <li><a href="#"><span class="fa fa-list-alt"></span>Recommend Us</a></li>
+                    <li><a href="#"><span class="fa fa-book"></span> Intro E-Books</a></li>
+                    <li><a href="#"><span class="fa fa-book"></span> Guest Book</a></li>
+                    <li><a href="#"><span class="fa fa-list-alt"></span> Recommend Us</a></li>
                 </ul>
             </div>
-            <div class="group share">
+            <div class="group social share">
                 <h2>Share this site on:</h2>
-                <a href="#"><span class="fa fa-facebook-square"></span></a>
-                <a href="#"><span class="fa fa-twitter-square"></span></a>
-                <a href="#"><span class="fa fa-google-plus-square"></span></a>
-                <a href="#"><span class="fa fa-plus-square"></span></a>
+                <a class="fb-btn" href="#"><span class="fa fa-facebook-square"></span></a>
+                <a class="twitter-btn" href="#"><span class="fa fa-twitter-square"></span></a>
+                <a class="google-btn" href="#"><span class="fa fa-google-plus-square"></span></a>
+                <a class="more-btn" href="#"><span class="fa fa-plus-square"></span></a>
             </div>
-            <div class="group follow">
+            <div class="group social follow">
                 <h2>Follow us on:</h2>
-                <a href="#"><span class="fa fa-facebook-square"></span></a>
-                <a href="#"><span class="fa fa-twitter-square"></span></a>
-                <a href="#"><span class="fa fa-rss-square"></span></a>
+                <a class="fb-btn" href="#"><span class="fa fa-facebook-square"></span></a>
+                <a class="twitter-btn" href="#"><span class="fa fa-twitter-square"></span></a>
+                <a class="rss-btn" href="#"><span class="fa fa-rss-square"></span></a>
             </div>
         </div>
-        <div class="right main-content">
-            <h2>Main Content</h2>
+        <div class="right">
+            <div class="main-content">
+                <div class="new-articles">
+                    <h2>New Articles This Week</h2>
+                    <article>
+                        <h3>
+                            <a href="#">Lorem Ipsum</a> 
+                            <span class="publish-info">(Published on 27 Jun 2016)</span>
+                        </h3>
+                        <p class="description">
+                            <strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a risus id tortor pharetra luctus. Sed purus risus, maximus sed tincidunt sollicitudin, dapibus quis diam. Mauris commodo nulla
+                            et ornare volutpat. Quisque tincidunt nisi non tellus condimentum, rutrum ultrices mauris finibus. Vestibulum vel libero varius, tempor ante in, ullamcorper purus.
+                        </p>
+                        <p class="excerpt">
+                            <strong>Excerpt:</strong>
+                            <img src="./images/saifulmalook.gif" alt="Saif ul Malook"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a risus id tortor pharetra luctus. Sed purus risus, maximus sed tincidunt sollicitudin, dapibus quis
+                            diam. Mauris commodo nulla et ornare volutpat. Quisque tincidunt nisi non tellus condimentum, rutrum ultrices mauris finibus. Vestibulum vel libero varius, tempor ante in, ullamcorper purus. Curabitur euismod est ante, sit
+                            amet faucibus enim vehicula et. Vivamus non auctor enim. Nam posuere vehicula sapien, ac ullamcorper leo egestas ac. Duis eu eros at magna mollis molestie eget suscipit lacus. Vivamus blandit purus vel facilisis congue. Donec
+                            interdum eu quam non consectetur.
+                        </p>
+                    </article>
+                </div>
+                <div class="new-videos">
+                    <h2>New Videos This Week</h2>
+                    <article>
+                        <h3>
+                            <a href="#">Lorem Ipsum</a> 
+                            <span class="publish-info">(Published on 27 Jun 2016)</span>
+                        </h3>
+                        <p class="description">
+                            <strong>Description:</strong>
+                            <img src="./images/zakirnaik.jpg" alt="Zakir Naik"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a risus id tortor pharetra luctus. Sed purus risus, maximus sed tincidunt sollicitudin, dapibus quis diam.
+                            Mauris commodo nulla et ornare volutpat. Quisque tincidunt nisi non tellus condimentum, rutrum ultrices mauris finibus. Vestibulum vel libero varius, tempor ante in, ullamcorper purus.
+                        </p>
+                    </article>
+                </div>
+                <div class="featured-articles">
+                    <h2>Featured Articles This Week</h2>
+                    <article>
+                        <h3>
+                            <a href="#">Lorem Ipsum</a> 
+                            <span class="publish-info">(Published on 27 Jun 2016)</span>
+                        </h3>
+                        <p class="description">
+                            <strong>Description:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a risus id tortor pharetra luctus. Sed purus risus, maximus sed tincidunt sollicitudin, dapibus quis diam. Mauris commodo nulla
+                            et ornare volutpat. Quisque tincidunt nisi non tellus condimentum, rutrum ultrices mauris finibus. Vestibulum vel libero varius, tempor ante in, ullamcorper purus.
+                        </p>
+                        <p class="excerpt">
+                            <strong>Excerpt:</strong>
+                            <img src="./images/supernova.jpg" alt="Super Nova"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a risus id tortor pharetra luctus. Sed purus risus, maximus sed tincidunt sollicitudin, dapibus quis diam.
+                            Mauris commodo nulla et ornare volutpat. Quisque tincidunt nisi non tellus condimentum, rutrum ultrices mauris finibus. Vestibulum vel libero varius, tempor ante in, ullamcorper purus. Curabitur euismod est ante, sit amet faucibus
+                            enim vehicula et. Vivamus non auctor enim. Nam posuere vehicula sapien, ac ullamcorper leo egestas ac. Duis eu eros at magna mollis molestie eget suscipit lacus. Vivamus blandit purus vel facilisis congue. Donec interdum eu
+                            quam non consectetur.
+                        </p>
+                    </article>
+                </div>
+                <div class="featured-videos">
+                    <h2>Featured Videos This Week</h2>
+                    <article>
+                        <h3>
+                            <a href="#">Lorem Ipsum</a> 
+                            <span class="publish-info">(Published on 27 Jun 2016)</span>
+                        </h3>
+                        <p class="description">
+                            <strong>Description:</strong>
+                            <img src="./images/tariqjameel.jpg" alt="Tariq Jameel"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus a risus id tortor pharetra luctus. Sed purus risus, maximus sed tincidunt sollicitudin, dapibus quis diam.
+                            Mauris commodo nulla et ornare volutpat. Quisque tincidunt nisi non tellus condimentum, rutrum ultrices mauris finibus. Vestibulum vel libero varius, tempor ante in, ullamcorper purus.
+                        </p>
+                    </article>
+                </div>
+            </div>
+            <div class="right-sidebar">
+                <div class="group lang-list">
+                    <div class="site-links">
+                        <ul>
+                            <li><a href="#"><span class="fa fa-home"></span> Home</a></li>
+                            <li><a href="#"><span class="fa fa-phone"></span> Contact</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Espanol</a></li>
+                            <li><a href="#">Russian</a></li>
+                            <li><a href="#">Italian</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="group help">
+                    <h2>Live Help by Chat</h2>
+                    <p>Have a question about Islam or converting to it? <a href="#">Click here</a> to chat now!</p>
+                    <p>Online daily: <br>From 10:00 PM to 1:00 AM</p>
+                </div>
+                <div class="group about">
+                    <h2>About this Site</h2>
+                    <p>This web site is for people of various faiths who seek to understand Islam and Muslims. It contains a lot of brief, yet informative articles about different aspects of Islam. New articles are added every week. Also, it features Live
+                        Help through chat.</p>
+                </div>
+                <div class="group login">
+                    <h2>Login</h2>
+                    <div class="login-group">
+                        <div>
+                            <label for="username">Username</label>
+                            <input type="text" id="username">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div>
+                            <label for="remember">
+                            <input type="checkbox" id="remember">
+                            Remember Me
+                        </label>
+                        </div>
+
+                        <button type="submit" class="btn">Login</button>
+                    </div>
+
+                    <p><a href="#">Forgot your password?</a></p>
+                    <p>No account? <a href="#">Register</a></p>
+                </div>
+                <div class="group popular">
+                    <h2>Most Popular</h2>
+                    <ul>
+                        <li><a href="#">Most viewed</a></li>
+                        <li><a href="#">Highest rated</a></li>
+                        <li><a href="#">Most emailed</a></li>
+                        <li><a href="#">Most printed</a></li>
+                        <li><a href="#">Most commented on</a></li>
+                    </ul>
+                </div>
+                <div class="group articles">
+                    <h2>List Articles</h2>
+                    <ul>
+                        <li><a href="#">Editor's Pick</a></li>
+                        <li><a href="#">Since your last visit</a></li>
+                        <li><a href="#">All by date</a></li>
+                        <li><a href="#">All by category</a></li>
+                    </ul>
+                </div>
+                <div class="group fav">
+                    <h2>Your Favorites</h2>
+                    <p>Your favorites list is empty. You may add articles to this list using the article tools.</p>
+                </div>
+                <div class="group history">
+                    <h2>Your History</h2>
+                    <p>Your history list is empty</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <!--font awesome-->
     <script src="https://use.fontawesome.com/bf22cf26bd.js"></script>
 </body>
+
 </html>
