@@ -1,0 +1,20 @@
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
+    font-weight: normal;
+    background-image: url("../images/makkah.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    font-weight: inherit;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 4px rgba(0,0,0,1);
+}
+.main > .left,
+.main > .right{
+    background-color: #fff;
+}
